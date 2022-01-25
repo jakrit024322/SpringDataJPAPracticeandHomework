@@ -21,6 +21,6 @@ public class Department {
     private String name;
 
     @OneToMany(mappedBy="department")
-    private List<employee> employees;
+    private List<Employee> employees;
 
 }

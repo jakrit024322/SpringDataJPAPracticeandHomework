@@ -22,6 +22,6 @@ public class Project {
     private int id;
     private String name;
     @OneToMany(mappedBy="project")
-    private List<employee> employees;
+    private List<Employee> employees;
     
 }

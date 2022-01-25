@@ -4,15 +4,16 @@ import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import nvc.it.model.employee;
-
-public interface EmployeeRepository extends JpaRepository< employee, Integer>{
+import nvc.it.model.Employee;
 
 
-    List<employee> findByNameContaining(String name);
+public interface EmployeeRepository extends JpaRepository< Employee, Integer>{
+
+
+    List<Employee> findByNameContaining(String name);
     
 
-    List<employee> findBySalaryLessThanEqual(int salary);
+    List<Employee> findBySalaryLessThanEqual(int salary);
     
     
 
